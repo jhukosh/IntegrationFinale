@@ -51,21 +51,21 @@ section{
 }
 
 /* hover */
-.imageEtTexte:hover img{
+.imageEtTexte:hover img, .imageEtTexte:active img{
     opacity : 1;
 }
-.imageEtTexte:hover .reward{
+.imageEtTexte:hover .reward, .imageEtTexte:active .reward{
     display: none;
 }
-.imageEtTexte:hover .dead{
+.imageEtTexte:hover .dead, .imageEtTexte:active .dead{
     display: none;
 }
-.imageEtTexte:hover .name_dead{
+.imageEtTexte:hover .name_dead, .imageEtTexte:active .name_dead{
     margin-top: 30%;
     color : white;
     font-size : 1.8rem;
 }
-.imageEtTexte:hover .name{
+.imageEtTexte:hover .name, .imageEtTexte:active .name{
     margin-top: 30%;
     font-size : 1.8rem;
 }
@@ -84,14 +84,14 @@ section{
     .name_dead{
         display:none;
     }
-    .imageEtTexte:hover .name_dead{
+    .imageEtTexte:hover .name_dead, .imageEtTexte:active .name_dead{
         display:flex;
         justify-content: center;
         color : white;
         font-weight: normal;
         font-size : 1.4rem;
     }
-    .imageEtTexte:hover .name{
+    .imageEtTexte:hover .name, .imageEtTexte:active .name{
         display:flex;
         justify-content: center;
         font-weight: normal;
@@ -125,14 +125,14 @@ section{
     .name_dead{
         display:none;
     }
-    .imageEtTexte:hover .name_dead{
+    .imageEtTexte:hover .name_dead, .imageEtTexte:active .name_dead{
         display:flex;
         justify-content: center;
         color : white;
         font-weight: normal;
         font-size : 0.9rem;
     }
-    .imageEtTexte:hover .name{
+    .imageEtTexte:hover .name, .imageEtTexte:active .name{
         display:flex;
         justify-content: center;
         font-weight: normal;
