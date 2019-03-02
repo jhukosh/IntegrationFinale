@@ -1,38 +1,106 @@
+@font-face{
+    font-family: "symbols"; 
+    src: url('fonts/tngan.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: "aniron"; 
+    src: url('fonts/anicb___.ttf'), url('fonts/anicm.ttf');
+    font-weight : bold;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "textes"; 
+    src: url('fonts/partybusiness.ttf');
+    font-weight: normal;
+}
 .container-fluid{
     padding: 0;
     margin :0;
+    font-family: "textes";
+    font-weight : normal;
+    font-size: 1.6rem;
+    overflow: hidden;
 }
-section{
-    margin : 5vh 5vw 5vh 5vw;
+h3{
+    font-family: "aniron";
+    font-weight : normal;
+    font-size:1.8rem;
 }
+h3, .content{
+    padding: 5vh;
+}
+.navbar{
+    background-color: #fe661d;
+}
+#menu ul li .separate{
+    border-right: 1px solid white;
+}
+
+/* hover navbar */
+#menu ul li a:hover{
+    text-decoration: underline;
+    color: white !important;
+}
+
 .carousel-caption p{
-    font-size: 1.4rem;
+    font-size: 3rem;
 }
-.nav-pills .nav-item{
-    margin-top:5vh;
-    margin-bottom: 5vh;
+.carousel-caption p #subtext{
+    font-size: 2.5rem;
+}
+#fellows{
+    background-color: #f0ede6;
+}
+#fellows h3 #subtexth3{
+    font-size: 1.2rem;
+}
+h3 .symbols{
+    font-family: "symbols";
+    color: #fe661d;
+}
+.nav-pills li a{
+    color : black;
+}
+
+.nav-pills li a:active, .nav-pills li a:hover{
+    color : #fe661d;
+    text-decoration: underline;
 }
 
 #fellows ul li a{
     text-align : center;
+}
+#fellows ul li a .symbols{
+    display:none;
+}
+.wanted .card{
+    background-color: black;
+    overflow: hidden;
+    border : 3px solid black !important;
+}
+.wanted .card-body{
+    background-color: black;
+    border: 3px solid black;
 }
 .amount{
     color:#ffbf00;
   }
 .imageEtTexte img{
     opacity : 0.6;
+    width : 100%;
 }
 .reward{
     background-color: rgba(255, 255, 255, 0.7);
     text-align : center;
-    font-size : 1.4rem;
+    font-size : 2.5rem;
     border-radius : 35px;
     margin-bottom: 5vh;
   }
 .dead{
-    color : black;
+    color : #fe661d;
     font-weight:bold;
-    font-size : 1.4rem;
+    font-size : 2.5rem;
     text-align : center;
     margin-top:10%;
 }
@@ -40,17 +108,30 @@ section{
     text-align : center;
     color : white;
     font-weight: bold;
+    font-size : 2rem;
 }
 .name_dead{
     text-align : center;
     color : black;
     font-weight: bold;
+    font-size : 2rem;
 }
 .hunter{
     padding-top: 2vh;
 }
 
 /* hover */
+#fellows ul li a:hover{
+    text-decoration: none;
+}
+#fellows ul li a:hover .underlined{
+    border-bottom: 3px solid #fe661d;
+}
+#fellows ul li a:hover .symbols{
+    display:inline;
+    font-family: "symbols";
+    color: #fe661d;
+}
 .imageEtTexte:hover img, .imageEtTexte:active img{
     opacity : 1;
 }
@@ -63,20 +144,21 @@ section{
 .imageEtTexte:hover .name_dead, .imageEtTexte:active .name_dead{
     margin-top: 30%;
     color : white;
-    font-size : 1.8rem;
+    font-size : 2.5rem;
+    text-decoration: line-through solid #fe661d;
 }
 .imageEtTexte:hover .name, .imageEtTexte:active .name{
     margin-top: 30%;
-    font-size : 1.8rem;
+    font-size : 2.5rem;
 }
 
-/* media */
+/* media queries*/
 @media screen and (max-width: 575.98px){
     .reward{
-        font-size : 1rem;
+        font-size : 1.8rem;
     }
     .dead{
-        font-size : 1rem;
+        font-size : 1.8rem;
     }
     .name{
         display:none;
@@ -89,19 +171,16 @@ section{
         justify-content: center;
         color : white;
         font-weight: normal;
-        font-size : 1.4rem;
+        font-size : 2rem;
     }
     .imageEtTexte:hover .name, .imageEtTexte:active .name{
         display:flex;
         justify-content: center;
         font-weight: normal;
-        font-size : 1.4rem;
+        font-size : 2rem;
     }
     .pills{
         padding-top: 0px;
-    }
-    .rounded-pill{
-        padding:6px;
     }
 }
 @media screen and (max-width: 768px){
@@ -114,10 +193,10 @@ section{
 }
 @media screen and (max-width: 1168px) and (min-width:768px){
     .dead{
-        font-size : 1.1rem;
+        font-size : 2rem;
     }
     .reward{
-        font-size : 0.9rem;
+        font-size : 1.9rem;
     }
     .name{
         display:none;
@@ -130,14 +209,42 @@ section{
         justify-content: center;
         color : white;
         font-weight: normal;
-        font-size : 0.9rem;
+        font-size : 1.9rem;
     }
     .imageEtTexte:hover .name, .imageEtTexte:active .name{
         display:flex;
         justify-content: center;
         font-weight: normal;
-        font-size : 0.9rem;
+        font-size : 1.9rem;
     }
+}
+
+#hunters .best_hunters{
+    margin-left:5vh;
+    margin-bottom: 5vh;
+}
+
+#reward{
+    background-color: black;
+    color:white;
+}
+#contact_reward{
+    color:#fe661d;
+    background-color: white;
+    font-size: 1.8rem;
+}
+
+/* About the ring */
+
+#ring{
+    background-color: black;
+    padding-bottom: 5vh;
+}
+#ring h3{
+    color:white;
+}
+#ring .card{
+    margin:5vh;
 }
 
 /* table */
@@ -153,10 +260,23 @@ table tr th{
 table tr td{
     padding:1vh;
 }
+#info_army{
+    margin:5vh;
+}
+#contact{
+    background-color: black;
+}
+#contact h3{
+    color:white;
+}
+label{
+    color:white;
+}
 
 /* footer */
 footer{
     color:white;
+    background-color: #fe661d;
 }
 footer li{
     list-style-type: none;
