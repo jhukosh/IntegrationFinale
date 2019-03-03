@@ -25,11 +25,34 @@
 h3{
     font-family: "aniron";
     font-weight : normal;
-    font-size:1.8rem;
 }
 h3, .content{
     padding: 5vh;
 }
+hr{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding:0 !important;
+    width: 50%;
+    background-color : #fe661d;
+    height:4px !important;
+    border:none;
+}
+.rounded_img{
+    border-radius: 50%;
+}
+
+/* media queries titles and texts */
+
+@media screen and (max-width: 576px){
+    h3{
+        font-size:1.4rem !important;
+    }
+    h3 #subtexth3{
+        font-size:1rem !important;
+    }
+}
+
 
 /**** navbar ****/
 
@@ -65,7 +88,7 @@ h3, .content{
 
 @media screen and (max-width: 576px){
     .carousel-item img{
-        height : 48vh;
+        height : 35vh;
     }
 }
 
@@ -175,7 +198,7 @@ h3 .symbols{
 
 /* media queries section fellows*/
 
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 576px){
     .reward{
         font-size : 1.8rem;
     }
@@ -261,6 +284,17 @@ h3 .symbols{
     margin-left:5vh;
     margin-bottom: 5vh;
 }
+.hunter_name{
+    color:#fe661d;
+    font-size: 1.9rem;
+}
+.profile{
+    text-decoration: underline;
+    color:black;
+}
+.hunters_likes{
+    color:#fe661d !important;
+}
 
 /**** section About the ring ****/
 
@@ -274,14 +308,25 @@ h3 .symbols{
 #ring .card{
     margin:5vh;
 }
+.ringQualities{
+    overflow: hidden;
+}
+.ringQualities .card-body{
+    border-bottom: 5px solid #fe661d;
+    background-color: #dddddd;
+}
+.ringQualities .card-header{
+    background-color: #fe661d;
+    color: white;
+}
 
 /** table **/
 
 table th,td{
-    border : 1px solid black;
+    border-bottom : 1px solid black;
 }
-table th{
-    background-color: dimgray;
+table .beige{
+    background-color: #e2dedb;
 }
 table tr th{
     padding:1vh;
@@ -294,6 +339,7 @@ table tr td{
 
 #info_army{
     margin:5vh;
+    font-size: 1.8rem;
 }
 
 /**** section contact ****/
