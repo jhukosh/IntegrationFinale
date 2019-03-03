@@ -1,3 +1,3 @@
 # Integration finale
 Formation développeur web et mobile _Wild Code School_  
-Partie 1
+Partie 1 & partie 2
