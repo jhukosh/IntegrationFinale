@@ -30,9 +30,14 @@ h3{
 h3, .content{
     padding: 5vh;
 }
+
+/**** navbar ****/
+
 .navbar{
     background-color: #fe661d;
 }
+
+/* media queries navbar */
 
 @media screen and (min-width: 992px){
     #menu ul li .separate{
@@ -41,10 +46,13 @@ h3, .content{
 }
 
 /* hover navbar */
+
 #menu ul li a:hover{
     text-decoration: underline;
     color: white !important;
 }
+
+/**** carousel ****/
 
 .carousel-caption p{
     font-size: 3rem;
@@ -52,6 +60,17 @@ h3, .content{
 .carousel-caption p #subtext{
     font-size: 2.5rem;
 }
+
+/* media queries carousel */
+
+@media screen and (max-width: 576px){
+    .carousel-item img{
+        height : 48vh;
+    }
+}
+
+/**** section fellows ****/
+
 #fellows{
     background-color: #f0ede6;
 }
@@ -65,12 +84,10 @@ h3 .symbols{
 .nav-pills li a{
     color : black;
 }
-
 .nav-pills li a:active, .nav-pills li a:hover{
     color : #fe661d;
     text-decoration: underline;
 }
-
 #fellows ul li a{
     text-align : center;
 }
@@ -123,7 +140,8 @@ h3 .symbols{
     padding-top: 2vh;
 }
 
-/* hover */
+/* hover fellows */
+
 #fellows ul li a:hover{
     text-decoration: none;
 }
@@ -155,7 +173,8 @@ h3 .symbols{
     font-size : 2.5rem;
 }
 
-/* media queries*/
+/* media queries section fellows*/
+
 @media screen and (max-width: 575.98px){
     .reward{
         font-size : 1.8rem;
@@ -186,6 +205,7 @@ h3 .symbols{
         padding-top: 0px;
     }
 }
+
 @media screen and (max-width: 768px){
     .card{
         margin-top: 5vh;
@@ -194,6 +214,7 @@ h3 .symbols{
         display:none;
     }
 }
+
 @media screen and (max-width: 1168px) and (min-width:768px){
     .dead{
         font-size : 2rem;
@@ -222,10 +243,7 @@ h3 .symbols{
     }
 }
 
-#hunters .best_hunters{
-    margin-left:5vh;
-    margin-bottom: 5vh;
-}
+/**** section reward ****/
 
 #reward{
     background-color: black;
@@ -237,7 +255,14 @@ h3 .symbols{
     font-size: 1.8rem;
 }
 
-/* About the ring */
+/**** section hunters ****/
+
+#hunters .best_hunters{
+    margin-left:5vh;
+    margin-bottom: 5vh;
+}
+
+/**** section About the ring ****/
 
 #ring{
     background-color: black;
@@ -250,7 +275,8 @@ h3 .symbols{
     margin:5vh;
 }
 
-/* table */
+/** table **/
+
 table th,td{
     border : 1px solid black;
 }
@@ -263,9 +289,15 @@ table tr th{
 table tr td{
     padding:1vh;
 }
+
+/**** section army ****/
+
 #info_army{
     margin:5vh;
 }
+
+/**** section contact ****/
+
 #contact{
     background-color: black;
 }
@@ -276,7 +308,8 @@ label{
     color:white;
 }
 
-/* footer */
+/**** footer ****/
+
 footer{
     color:white;
     background-color: #fe661d;
@@ -288,5 +321,5 @@ footer li{
     text-align:center;
 }
 footer a{
-    color: white;
+    color:white;
 }
