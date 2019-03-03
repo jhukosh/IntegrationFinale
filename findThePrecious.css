@@ -369,3 +369,8 @@ footer li{
 footer a{
     color:white;
 }
+
+/* footer hover */
+footer a:hover{
+    color:white;
+}
