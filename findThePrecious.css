@@ -33,8 +33,11 @@ h3, .content{
 .navbar{
     background-color: #fe661d;
 }
-#menu ul li .separate{
+
+@media screen and (min-width: 992px){
+    #menu ul li .separate{
     border-right: 1px solid white;
+    }
 }
 
 /* hover navbar */
