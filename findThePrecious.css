@@ -121,6 +121,7 @@ h3 .symbols{
     background-color: black;
     overflow: hidden;
     border : 3px solid black !important;
+    max-width:25rem;
 }
 .wanted .card-body{
     background-color: black;
