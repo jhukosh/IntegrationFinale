@@ -5,10 +5,12 @@ $dark:#343434;
 $ringsBg: transparent;
 $fontSize: 34px;
   
-  @mixin ring($thickness, $colors){
-    border : $thickness solid $colors;
+  @mixin ring($colors, $width){
+    border : $width/10 solid $colors;
     box-shadow : inset 2px 2px 2px $colors, 2px 2px 2px $colors;
-    border-radius:50%;
+    border-radius: 50%;
+    width: $width;
+    height: $width;
   }
 
 #container{
@@ -30,9 +32,7 @@ $fontSize: 34px;
     }
     
     .preciousRing{
-      @include ring(3px, $orange);
-      width : 50px;
-      height:50px;
+      @include ring($orange, 50px);
       background-color: $ringsBg;
       margin-left:2vh;
       margin-right:2vh;
@@ -51,9 +51,7 @@ $fontSize: 34px;
     }
     
     .oneRing{
-      @include ring(3px, $yellow);
-      width : 70px;
-      height:70px;
+      @include ring($yellow, 70px);
       background-color: $ringsBg;
       margin-right:2vh;
     }
@@ -68,7 +66,6 @@ $fontSize: 34px;
     margin-bottom:6vh;
     
     div{
-      @include ring(3px, $dark);
       background-color: $ringsBg;
     }
   }
@@ -76,9 +73,9 @@ $fontSize: 34px;
 
 @for $i from 1 through 6 {
   .loopRings:nth-child(#{$i}) {
-    width : $i * 25px;
-    height : $i * 25px;
-    margin-left : -12px;
+    $ringWidth : $i *28px;
+    @include ring($dark, $ringWidth);
+    margin-left : -15px;
   }
 }
 

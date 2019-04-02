@@ -16,7 +16,7 @@
     font-size: 34px;
   }
   #container #myPrecious .preciousRing {
-    border: 3px solid #ff6904;
+    border: 5px solid #ff6904;
     box-shadow: inset 2px 2px 2px #ff6904, 2px 2px 2px #ff6904;
     border-radius: 50%;
     width: 50px;
@@ -36,7 +36,7 @@
     font-size: 34px;
   }
   #container #theOneRing .oneRing {
-    border: 3px solid #fcca02;
+    border: 7px solid #fcca02;
     box-shadow: inset 2px 2px 2px #fcca02, 2px 2px 2px #fcca02;
     border-radius: 50%;
     width: 70px;
@@ -53,46 +53,61 @@
     margin-bottom: 6vh;
   }
   #container #pleaseFindIt div {
-    border: 3px solid #343434;
-    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
-    border-radius: 50%;
     background-color: transparent;
   }
   
   .loopRings:nth-child(1) {
-    width: 25px;
-    height: 25px;
-    margin-left: -12px;
+    border: 2.8px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-left: -15px;
   }
   
   .loopRings:nth-child(2) {
-    width: 50px;
-    height: 50px;
-    margin-left: -12px;
+    border: 5.6px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin-left: -15px;
   }
   
   .loopRings:nth-child(3) {
-    width: 75px;
-    height: 75px;
-    margin-left: -12px;
+    border: 8.4px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    margin-left: -15px;
   }
   
   .loopRings:nth-child(4) {
-    width: 100px;
-    height: 100px;
-    margin-left: -12px;
+    border: 11.2px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    margin-left: -15px;
   }
   
   .loopRings:nth-child(5) {
-    width: 125px;
-    height: 125px;
-    margin-left: -12px;
+    border: 14px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-left: -15px;
   }
   
   .loopRings:nth-child(6) {
-    width: 150px;
-    height: 150px;
-    margin-left: -12px;
+    border: 16.8px solid #343434;
+    box-shadow: inset 2px 2px 2px #343434, 2px 2px 2px #343434;
+    border-radius: 50%;
+    width: 168px;
+    height: 168px;
+    margin-left: -15px;
   }
   
   #pleaseText {
