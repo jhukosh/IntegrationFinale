@@ -4,16 +4,10 @@ $yellow:#fcca02;
 $dark:#343434;
 $ringsBg: transparent;
 $fontSize: 34px;
-
-  @mixin myBorders($thickness, $colors){
-    border : $thickness solid $colors;    
-  }
-
-  @mixin myShadows ($color) {
-    box-shadow : inset 2px 2px 2px $color, 2px 2px 2px $color;    
-  }
-    
-  @mixin radius() {
+  
+  @mixin ring($thickness, $colors){
+    border : $thickness solid $colors;
+    box-shadow : inset 2px 2px 2px $colors, 2px 2px 2px $colors;
     border-radius:50%;
   }
 
@@ -36,9 +30,7 @@ $fontSize: 34px;
     }
     
     .preciousRing{
-      @include myBorders(3px, $orange);
-      @include myShadows($orange);
-      @include radius();
+      @include ring(3px, $orange);
       width : 50px;
       height:50px;
       background-color: $ringsBg;
@@ -59,9 +51,7 @@ $fontSize: 34px;
     }
     
     .oneRing{
-      @include myBorders(3px, $yellow);
-      @include myShadows($yellow);
-      @include radius();
+      @include ring(3px, $yellow);
       width : 70px;
       height:70px;
       background-color: $ringsBg;
@@ -78,9 +68,7 @@ $fontSize: 34px;
     margin-bottom:6vh;
     
     div{
-      @include myBorders(3px, $dark);
-      @include myShadows($dark);
-      @include radius();
+      @include ring(3px, $dark);
       background-color: $ringsBg;
     }
   }
