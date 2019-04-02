@@ -1,0 +1,100 @@
+$background:#f3f1e8;
+$orange:#ff6904;
+$yellow:#fcca02;
+$dark:#343434;
+$ringsBg: transparent;
+$fontSize: 34px;
+
+  @mixin myBorders($thickness, $colors){
+    border : $thickness solid $colors;    
+  }
+
+  @mixin myShadows ($color) {
+    box-shadow : inset 2px 2px 2px $color, 2px 2px 2px $color;    
+  }
+    
+  @mixin radius() {
+    border-radius:50%;
+  }
+
+#container{
+  width:100%;
+  background-color:#f3f1e8;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+  #myPrecious{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:6vh;
+    
+    p{
+      margin-top:2vh;
+      font-size:$fontSize;
+    }
+    
+    .preciousRing{
+      @include myBorders(3px, $orange);
+      @include myShadows($orange);
+      @include radius();
+      width : 50px;
+      height:50px;
+      background-color: $ringsBg;
+      margin-left:2vh;
+      margin-right:2vh;
+    }
+  }
+  
+  #theOneRing{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:6vh;
+    
+    p{
+      margin-top:2vh;
+      font-size:$fontSize;
+    }
+    
+    .oneRing{
+      @include myBorders(3px, $yellow);
+      @include myShadows($yellow);
+      @include radius();
+      width : 70px;
+      height:70px;
+      background-color: $ringsBg;
+      margin-right:2vh;
+    }
+  }
+  
+  #pleaseFindIt{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin-top:6vh;
+    margin-bottom:6vh;
+    
+    div{
+      @include myBorders(3px, $dark);
+      @include myShadows($dark);
+      @include radius();
+      background-color: $ringsBg;
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  .loopRings:nth-child(#{$i}) {
+    width : $i * 25px;
+    height : $i * 25px;
+    margin-left : -12px;
+  }
+}
+
+#pleaseText{
+  margin-top: -4vh;
+  font-size:$fontSize;
+}
